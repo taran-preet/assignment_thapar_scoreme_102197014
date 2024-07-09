@@ -37,14 +37,13 @@ def longest_path(graph: list) -> int:
     topo_order = topological_sort(graph)
     return calculate_longest_path(graph, topo_order)
 
-# Example usage:
 graph = [
        [(1, 10)],
         [(2, 10)],
         [(3, 10)],
         []
 ]
-print(longest_path(graph))  # Output: 7
+print(longest_path(graph))  
 
 
 
@@ -54,7 +53,7 @@ graph = [
         [(3, 5)],
         []
 ]
-print(longest_path(graph))  # Output: 6
+print(longest_path(graph))  
 
 
 
@@ -65,7 +64,7 @@ graph = [
         [(3, 10)],
         []
 ]
-print(longest_path(graph))  # Output: 30
+print(longest_path(graph))  
 
 
 graph = [
@@ -74,6 +73,6 @@ graph = [
         [(3, 1)],
         []
 ]
-print(longest_path(graph))  # Output: 2
+print(longest_path(graph))  
 print("All test cases pass")
 
